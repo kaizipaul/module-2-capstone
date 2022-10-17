@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
 body {
-    background-color: bisque;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Archivo', sans-serif;  
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem 0.3rem;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    
+}
+
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: fill;
+}
+
+footer {
+    padding: 1rem 1rem;
+    border-top: 1px solid black;
+}
+
+.display-section {
+    padding: 5rem 3rem;
+}
+
+.line {
+    height: 1.5rem;
+    border-left: 1px solid black;
 }
