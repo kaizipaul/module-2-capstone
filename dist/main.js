@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Archivo&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  top: 0;\\r\\n  left: 0;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  width: 100vw;\\r\\n  box-sizing: border-box;\\r\\n  overflow-x: hidden;\\r\\n  font-family: 'Archivo', sans-serif;  \\r\\n}\\r\\n\\r\\na:link {\\r\\n    text-decoration: none;\\r\\n    color: black;\\r\\n}\\r\\n\\r\\n.navbar {\\r\\n    display: flex;\\r\\n    gap: 4rem;\\r\\n    align-items: center;\\r\\n    justify-content: center;\\r\\n    padding: 1.5rem 2.5rem 0.3rem;\\r\\n    border-bottom: 1px solid black;\\r\\n}\\r\\n\\r\\n.logo {\\r\\n    width: 3.5rem;\\r\\n    height: 3.5rem;\\r\\n    border-radius: 50%;\\r\\n    border: 1px solid black;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n    padding: 1rem 1rem;\\r\\n    border-top: 1px solid black;\\r\\n}\\r\\n\\r\\n.display-section {\\r\\n    padding: 5rem 3rem;\\r\\n}\\r\\n\\r\\n.line {\\r\\n    height: 1.5rem;\\r\\n    border-left: 1px solid black;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-setup/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Archivo&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  top: 0;\\n  left: 0;\\n  margin: 0;\\n  padding: 0;\\n  width: 100vw;\\n  box-sizing: border-box;\\n  overflow-x: hidden;\\n  font-family: 'Archivo', sans-serif;\\n}\\n\\na:link {\\n  text-decoration: none;\\n  color: black;\\n}\\n\\n.navbar {\\n  display: flex;\\n  gap: 4rem;\\n  align-items: center;\\n  justify-content: center;\\n  padding: 1.5rem 2.5rem 0.3rem;\\n  border-bottom: 1px solid black;\\n}\\n\\n.logo {\\n  width: 3.5rem;\\n  height: 3.5rem;\\n}\\n\\n.logo img {\\n  width: 4rem;\\n  height: 4rem;\\n  object-fit: fill;\\n}\\n\\nfooter {\\n  padding: 1rem 1rem;\\n  border-top: 1px solid black;\\n}\\n\\n.container {\\n  display: grid;\\n  grid-template-columns: repeat(4, 1fr);\\n  grid-template-rows: repeat(13, 1fr);\\n  column-gap: 10px;\\n  row-gap: 10px;\\n  padding: 3rem;\\n}\\n\\n.pokemon-card {\\n  display: flex;\\n  flex-direction: column;\\n  border: 1px solid black;\\n  padding: 1rem;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\\n.poke-img {\\n  width: 40%;\\n  height: 40%;\\n}\\n\\n.line {\\n  height: 1.5rem;\\n  border-left: 1px solid black;\\n}\\n\\n.modal {\\n  position: fixed;\\n  top: 50%;\\n  left: 50%;\\n  width: 85vw;\\n  transform: translate(-50%, -50%) scale(0);\\n  justify-content: center;\\n  align-items: center;\\n  transition: 0.75s ease-in-out;\\n}\\n\\n.modal.active {\\n  transform: translate(-50%, -50%) scale(1);\\n}\\n\\n.popup {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  width: 60%;\\n  height: fit-content;\\n  border: 2px solid black;\\n  z-index: 10;\\n  background-color: azure;\\n  position: relative;\\n  padding: 0.2rem;\\n}\\n\\n#close {\\n  position: absolute;\\n  right: 5px;\\n  top: -25px;\\n  font-size: 40px;\\n  font-weight: bold;\\n  cursor: pointer;\\n}\\n\\n.popup-img {\\n  width: 50%;\\n  height: 50%;\\n  padding: 0;\\n  margin: 0;\\n}\\n\\n.attributes {\\n  width: 80%;\\n  display: flex;\\n  justify-content: space-between;\\n}\\n\\n.comment-form {\\n  display: flex;\\n  flex-direction: column;\\n  gap: 5px;\\n  width: 40%;\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-setup/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -37,16 +37,6 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://webpack-setup/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
-
-/***/ }),
-
-/***/ "./src/assets/pokeball.png":
-/*!*********************************!*\
-  !*** ./src/assets/pokeball.png ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/images/pokeball.png\");\n\n//# sourceURL=webpack://webpack-setup/./src/assets/pokeball.png?");
 
 /***/ }),
 
@@ -126,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_pokeball_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/pokeball.png */ \"./src/assets/pokeball.png\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://webpack-setup/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modal_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal.js */ \"./src/modal.js\");\n\n\n\n(0,_modal_js__WEBPACK_IMPORTED_MODULE_1__.fetchPokemon)();\n(0,_modal_js__WEBPACK_IMPORTED_MODULE_1__.displayModal)();\n(0,_modal_js__WEBPACK_IMPORTED_MODULE_1__.displayPokemon)();\n\n\n//# sourceURL=webpack://webpack-setup/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modal.js":
+/*!**********************!*\
+  !*** ./src/modal.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayModal\": () => (/* binding */ displayModal),\n/* harmony export */   \"displayPokemon\": () => (/* binding */ displayPokemon),\n/* harmony export */   \"fetchPokemon\": () => (/* binding */ fetchPokemon)\n/* harmony export */ });\nconst num = 50;\n\nconst displayModal = async (id) => {\n  const pokeData = await getPokemon(id);\n  const modal = document.querySelector('.modal');\n  modal.innerHTML = ` <div class=\"popup\">\n  <p id=\"close\" class=\"close-popup\">&times;</p>\n  <img class=\"popup-img\" src=\"${pokeData.sprites.other.dream_world.front_default}\">\n  <h3 class=\"popup-name\">Charizard</h3>\n  <div class=\"attributes\">\n      <p id=\"name\"><strong>Ability</strong>: Blaze</p>\n      <p id=\"type\"><strong>Type</strong>: Fire</p>\n  </div>\n  <div class=\"attributes\">\n      <p id=\"weight\"><strong>Weight</strong>: 498</p>\n      <p id=\"height\"><strong>Height</strong>: 15</p>\n  </div>\n  <div class=\"comments-section\">\n      <h4 class=\"comments-header\">Comments(2)</h4>\n      <p class=\"comm\">03/2/2022  Cedric: I love it</p>\n  </div>\n  <form class=\"comment-form\">\n      <h4 class=\"add-comment\">Add a comment</h4>\n      <input id=\"comment-input\" class=\"comment-input\" placeholder=\"Please type your name here\" type=\"text\">\n      <textarea id=\"comment-area\" placeholder=\"Enter your message here\"></textarea>\n      <button class=\"submit\">Comment</button>\n  </form>\n</div>`;\n\n  const closeBtn = document.querySelectorAll('.close-popup');\n  closeBtn.forEach((btn) => {\n    btn.addEventListener('click', () => {\n      console.log('helloo');\n      modal.classList.remove('active');\n    });\n  });\n};\n\nconst displayPokemon = (pokemon) => {\n  const container = document.querySelector('.container');\n  const mainContainer = document.createElement('div');\n  mainContainer.classList.add('pokemon-card');\n  const pokeImg = document.createElement('img');\n  pokeImg.classList.add('poke-img');\n  pokeImg.setAttribute('src', pokemon.sprites.other.dream_world.front_default);\n  const secondDiv = document.createElement('div');\n  secondDiv.classList.add('name-likes');\n  secondDiv.innerHTML = `<h4 class=\"poke-name\">${pokemon.species.name}</h4> <i class=\"fa-regular fa-heart\"></i>`;\n  const likes = document.createElement('p');\n  likes.textContent = '7 likes';\n  const commentsBtn = document.createElement('button');\n  commentsBtn.classList.add('comments');\n  commentsBtn.textContent = 'Comments';\n  const reservationsBtn = document.createElement('button');\n  reservationsBtn.classList.add('reservations');\n  reservationsBtn.textContent = 'Reservations';\n  mainContainer.append(pokeImg, secondDiv, likes, commentsBtn, reservationsBtn);\n  container.appendChild(mainContainer);\n\n  const commentBtn = document.querySelectorAll('.comments');\n  commentBtn.forEach((btn) => {\n    btn.addEventListener('click', () => {\n      const modal = document.querySelector('.modal');\n      modal.classList.add('active');\n      displayModal(300);\n    });\n  });\n};\n\nconst getPokemon = async (id) => {\n  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;\n  const response = await fetch(url);\n  const pokemon = await response.json();\n  displayPokemon(pokemon);\n  return pokemon;\n};\n\nconst fetchPokemon = async () => {\n  for (let i = 1; i <= num; i += 1) {\n    // eslint-disable-next-line no-await-in-loop\n    await getPokemon(i);\n  }\n};\n\n\n\n\n//# sourceURL=webpack://webpack-setup/./src/modal.js?");
 
 /***/ })
 
@@ -181,18 +181,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -207,26 +195,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
