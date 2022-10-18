@@ -41,8 +41,27 @@ footer {
   border-top: 1px solid black;
 }
 
-.display-section {
-  padding: 5rem 3rem;
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(50, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 3rem;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-img {
+  width: 40%;
+  height: 40%;
 }
 
 .line {
