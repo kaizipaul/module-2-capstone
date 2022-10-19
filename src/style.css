@@ -138,12 +138,18 @@ footer {
 .comment-input,
 .comment-area {
   padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
 }
 
 .submit {
   width: fit-content;
   align-self: flex-end;
   cursor: pointer;
+  background: #2443c2;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
 }
 
 .line-rule {
