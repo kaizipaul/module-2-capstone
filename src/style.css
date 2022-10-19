@@ -72,7 +72,7 @@ footer {
 .modal {
   position: fixed;
   top: 50%;
-  left: 65%;
+  left: 70%;
   width: 95vw;
   transform: translate(-50%, -50%) scale(0);
   justify-content: center;
@@ -89,11 +89,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  color: #fff;
+  width: 50%;
   height: 700px;
   border: 2px solid black;
+  border-radius: 10px;
   z-index: 10;
-  background-color: azure;
+  background-color: #011801;
   position: relative;
   padding: 0.7rem;
   overflow-y: scroll;
@@ -106,17 +108,22 @@ footer {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+#close:hover {
+  font-size: 48px;
 }
 
 .popup-img {
-  width: 45%;
-  height: 45%;
+  width: 40%;
+  height: 40%;
   padding: 0;
   margin: 0;
 }
 
 .attributes {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -126,4 +133,65 @@ footer {
   flex-direction: column;
   gap: 5px;
   width: 40%;
+}
+
+.comment-input,
+.comment-area {
+  padding: 0.5rem;
+}
+
+.submit {
+  width: fit-content;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.line-rule {
+  display: block;
+  border-bottom: 0.1px solid aliceblue;
+  width: 20%;
+}
+
+.comments-section {
+  min-height: 40px;
+  overflow-y: scroll;
+  width: 50%;
+  background-color: bisque;
+  color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#name {
+  background-color: #ed6f07;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#type {
+  background-color: #392876;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#weight {
+  background-color: #ac9e06;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#height {
+  background-color: #ac0606;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.popup-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fa-comment {
+  padding-left: 5px;
+  color: #38c11f;
 }
