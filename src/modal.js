@@ -19,6 +19,13 @@ const displayModal = async (id) => {
   const modal = document.querySelector('.modal');
   modal.innerHTML = ` <div class="popup">
   <p id="close" class="close-popup">&times;</p>
+  <div class="moves">
+  <h4>Special Moves</h4>
+  <li><i class="fa-solid fa-circle first"></i>${capitalize(pokeData.moves[0].move.name)}</li>
+  <li><i class="fa-solid fa-circle second"></i>${capitalize(pokeData.moves[1].move.name)}</li>
+  <li><i class="fa-solid fa-circle third"></i>${capitalize(pokeData.moves[2].move.name)}</li>
+  <li><i class="fa-solid fa-circle fourth"></i>${capitalize(pokeData.moves[3].move.name)}</li>
+  </div>
   <img class="popup-img" src="${pokeData.sprites.other.dream_world.front_default}">
   <h3 class="popup-name">${capitalize(pokeData.species.name)}</h3>
   <div class="line-rule"></div>
