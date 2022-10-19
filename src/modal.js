@@ -1,7 +1,5 @@
 import { getComments, postComments, commentCount } from './commentsApi.js';
 
-const num = 50;
-
 const displayModal = async (id) => {
   const comments = await getComments(id);
   const count = await commentCount(id);
@@ -56,7 +54,7 @@ const displayModal = async (id) => {
   });
 };
 
-const displayPokemon = (pokemon) => {
+const displayPokemon = (pokemon, id) => {
   const container = document.querySelector('.container');
   const mainContainer = document.createElement('div');
   mainContainer.classList.add('pokemon-card');
@@ -70,6 +68,7 @@ const displayPokemon = (pokemon) => {
   likes.textContent = '7 likes';
   const commentsBtn = document.createElement('button');
   commentsBtn.classList.add('comments');
+  commentsBtn.setAttribute('id', id);
   commentsBtn.textContent = 'Comments';
   const reservationsBtn = document.createElement('button');
   reservationsBtn.classList.add('reservations');
@@ -77,15 +76,15 @@ const displayPokemon = (pokemon) => {
   mainContainer.append(pokeImg, secondDiv, likes, commentsBtn, reservationsBtn);
   container.appendChild(mainContainer);
 
-  const commentBtn = document.querySelectorAll('.comments');
-  commentBtn.forEach((btn, index) => {
-    const num = index + 1;
-    btn.addEventListener('click', () => {
-      const modal = document.querySelector('.modal');
-      modal.classList.add('active');
-      displayModal(num);
-    });
-  });
+  // const commentBtn = document.querySelectorAll('.comments');
+  // commentBtn.forEach((btn, index) => {
+  //   const num = index + 1;
+  //   btn.addEventListener('click', async () => {
+  //     const modal = document.querySelector('.modal');
+  //     modal.classList.add('active');
+  //     await displayModal(num);
+  //   });
+  // });
 };
 
 const renderPokemon = async (id) => {
@@ -99,11 +98,12 @@ const getPokemon = async (id) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   const response = await fetch(url);
   const pokemon = await response.json();
-  displayPokemon(pokemon);
+  displayPokemon(pokemon, id);
   return pokemon;
 };
 
 const fetchPokemon = async () => {
+  const num = 50;
   for (let i = 1; i <= num; i += 1) {
     // eslint-disable-next-line no-await-in-loop
     await getPokemon(i);
