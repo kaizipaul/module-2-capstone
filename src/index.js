@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('click', (e) => {
   const num = Number(e.target.id);
-  console.log(e.target.id);
   if (e.target.classList.contains('comments')) {
     const modal = document.querySelector('.modal');
     modal.classList.add('active');
