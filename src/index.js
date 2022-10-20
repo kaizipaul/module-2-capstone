@@ -1,7 +1,8 @@
 import './style.css';
 import './assets/images/pokeball.png';
 import './assets/images/pokeball.jpeg';
-import { fetchPokemon, displayModal } from './modal.js';
+import { fetchPokemon } from './modal.js';
+import displayModal from './displayModal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchPokemon();
