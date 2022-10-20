@@ -1,6 +1,16 @@
 import { updateLikes } from './handleLikes.js';
 
-const num = 50;
+const capitalize = (str) => {
+  const cap = str.charAt(0).toUpperCase() + str.slice(1);
+  return cap;
+};
+
+const renderPokemon = async (id) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+  const response = await fetch(url);
+  const pokemon = await response.json();
+  return pokemon;
+};
 
 const displayPokemon = (pokemon, id) => {
   const container = document.querySelector('.container');
@@ -15,8 +25,8 @@ const displayPokemon = (pokemon, id) => {
   const likes = document.createElement('p');
   likes.innerHTML = `<i id=${id} class="far fa-heart"></i><span id=counter${id} class="likes-count">0</span>`;
   const commentsBtn = document.createElement('button');
+  commentsBtn.setAttribute('id', id);
   commentsBtn.classList.add('comments');
-  commentsBtn.innerHTML = '<i class="fa-regular fa-comment"></i>';
   mainContainer.append(pokeImg, secondDiv, likes, commentsBtn);
   container.appendChild(mainContainer);
 
@@ -31,13 +41,17 @@ const getPokemon = async (id) => {
   const response = await fetch(url);
   const pokemon = await response.json();
   displayPokemon(pokemon, id);
+  return pokemon;
 };
 
 const fetchPokemon = async () => {
-  for (let i = 1; i <= num; i += 1) {
+  const num = 355;
+  for (let i = 300; i <= num; i += 1) {
     // eslint-disable-next-line no-await-in-loop
     await getPokemon(i);
   }
 };
 
-export { displayPokemon, fetchPokemon };
+export {
+  fetchPokemon, capitalize, displayPokemon, renderPokemon,
+};

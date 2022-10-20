@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Pokemon Pokedex
-In this project I built a JavaScript project for the Leaderboard list app, using webpack and ES6 features. 
-I added a feature of sending and receiving data from/to the Leaderboard API and added styling.
+In this project I built a JavaScript project using the PokeApi and the Involvement Api. This project displays
+a pokedex of about 50 rare pokemons. Details of specific pokemon are also displayed in a modal window where comments 
+can be added. Users are also allowed to give likes to their favorite pokemon.
 
  ## Learning objectives
 - Use JavaScript modules
@@ -15,7 +16,14 @@ Please use this [link](https://jaymelfah.github.io/Leaderboard/dist/)
 
 ## Built With
 
-- HTML, CSS, JavaScript, Webpack
+- HTML
+- CSS 
+- JavaScript
+- Webpack
+- Jest
+- ES6 modules
+- [PokeApi](https://pokeapi.co/)
+- [Involvement Api](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
 
 ## Getting Started
@@ -47,6 +55,7 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 
 👤 Jeremiah Melfah
+👤 Paul Kaizirege
 
 - GitHub: [GitHub](https://github.com/Jaymelfah)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeremiah-ekow-melfah-a4402a161/)
