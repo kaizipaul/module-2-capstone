@@ -27,7 +27,7 @@ const displayModal = async (id) => {
         <p id="height"><strong>Height</strong>: ${pokeData.height}</p>
     </div>
     <div class="line-rule"></div>
-    <h4 class="comments-header">Comments(${count || 0})</h4>
+    <h4 class="comments-header">Comments (${count || 0})</h4>
     <div class="comments-section">
         ${comments.length >= 1
     ? comments.map((comment) => `<p class="comm">${comment.creation_date}-  ${comment.username}: ${comment.comment}</p>`).join('')
