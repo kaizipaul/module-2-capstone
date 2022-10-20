@@ -1,58 +1,9 @@
 import './style.css';
 import './assets/images/pokeball.png';
 
+import { updateLikes } from './handleLikes.js';
+
 const num = 50;
-const likesUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/tG7RtMwoebPaqmjha3lr/likes/';
-
-const likesArray = [];
-const getLikes = async () => {
-  const response = await fetch(likesUrl);
-  const data = await response.json();
-
-  data.forEach((element) => {
-    likesArray.push(element);
-  });
-};
-
-const updateLikes = async (id, likeCounter) => {
-  await getLikes();
-  let counter = 0;
-  likesArray.forEach((like) => {
-    if (like.item_id === id) {
-      counter = like.likes;
-    }
-  });
-  likeCounter.innerText = `${counter}`;
-};
-
-let likeStorage = [];
-if (localStorage.getItem('likedItems')) {
-  likeStorage = JSON.parse(localStorage.likedItems);
-}
-
-const sendData = async (id) => {
-  await fetch(likesUrl, {
-    method: 'POST',
-    body: JSON.stringify({
-      item_id: id,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-  likeStorage.push(id);
-  localStorage.setItem('likedItems', JSON.stringify(likeStorage));
-};
-
-document.addEventListener('click', (e) => {
-  const likeID = Number(e.target.id);
-  if (e.target.classList.contains('fa-heart')) {
-    e.target.classList.remove('far');
-    e.target.classList.add('fas');
-    updateLikes(likeID);
-    sendData(likeID);
-  }
-});
 
 const displayPokemon = (pokemon, id) => {
   const container = document.querySelector('.container');
@@ -75,6 +26,9 @@ const displayPokemon = (pokemon, id) => {
   mainContainer.append(pokeImg, secondDiv, likes, commentsBtn);
   container.appendChild(mainContainer);
   const likeCounter = document.getElementById(`counter${id}`);
+  const numLikes = likeCounter.innerText;
+  const numLikesInt = numLikes.match(/\d+/)[0];
+  likeCounter.innerText = `${Number(numLikesInt) + 1}`;
   updateLikes(id, likeCounter);
 
   const counter = document.querySelector('.pokemon-section');
@@ -96,3 +50,5 @@ const fetchPokemon = async () => {
 };
 
 document.addEventListener('DOMContentLoaded', fetchPokemon());
+
+export default { displayPokemon };
