@@ -4,7 +4,7 @@ body {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -44,7 +44,7 @@ footer {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   column-gap: 10px;
   row-gap: 10px;
   padding: 3rem;
@@ -67,4 +67,183 @@ footer {
 .line {
   height: 1.5rem;
   border-left: 1px solid black;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  width: 95vw;
+  transform: translate(-50%, -50%) scale(0);
+  justify-content: center;
+  align-items: center;
+  transition: 0.75s ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 50%;
+  height: 700px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #011801;
+  position: relative;
+  padding: 0.7rem;
+  overflow-y: scroll;
+  box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 5px 6px rgba(0, 0, 0, 0.75);
+}
+
+.moves {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: absolute;
+  list-style: none;
+  top: 20px;
+  left: 10px;
+  border: 0.5px solid aliceblue;
+  border-radius: 10px;
+  padding: 2rem;
+  background: transparent;
+}
+
+.moves > h4 {
+  margin: 0;
+  padding: 0;
+}
+
+#close {
+  position: absolute;
+  right: 5px;
+  top: -25px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+#close:hover {
+  font-size: 48px;
+}
+
+.popup-img {
+  width: 40%;
+  height: 40%;
+  padding: 0;
+  margin: 0;
+}
+
+.attributes {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+}
+
+.comment-input,
+.comment-area {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.submit {
+  width: fit-content;
+  align-self: flex-end;
+  cursor: pointer;
+  background: #2443c2;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.line-rule {
+  display: block;
+  border-bottom: 0.1px solid aliceblue;
+  width: 20%;
+}
+
+.comments-section {
+  min-height: 40px;
+  overflow-y: scroll;
+  width: 50%;
+  background-color: bisque;
+  color: black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+i {
+  padding-right: 5px;
+}
+
+.first {
+  color: #ed6f07;
+}
+
+#name {
+  background-color: #ed6f07;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.second {
+  color: #392876;
+}
+
+#type {
+  background-color: #392876;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.third {
+  color: #ac9e06;
+}
+
+#weight {
+  background-color: #ac9e06;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.fourth {
+  color: #ac0606;
+}
+
+#height {
+  background-color: #ac0606;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.popup-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fa-comment {
+  padding-left: 5px;
+  color: #38c11f;
+}
+
+.add-comment {
+  text-align: center;
 }

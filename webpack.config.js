@@ -28,13 +28,13 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpe?g)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images/',
+              outputPath: 'assets/images',
             },
           },
         ],
