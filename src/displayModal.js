@@ -36,8 +36,8 @@ const displayModal = async (id) => {
     </div>
     <form class="comment-form">
         <h4 class="add-comment">Add a comment<i class="fa-solid fa-comment"></i></h4>
-        <input id="comment-input" class="comment-input" placeholder="Please type your name here" type="text" required>
-        <textarea id="comment-area" placeholder="Enter your message here" required></textarea>
+        <input id="comment-input" class="comment-input" placeholder="Your Name" type="text" required>
+        <textarea id="comment-area" class="comment-area" placeholder="Your Message" required></textarea>
         <button class="submit">Comment</button>
     </form>
   </div>`;

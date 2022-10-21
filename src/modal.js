@@ -42,9 +42,9 @@ const displayPokemon = (pokemon, id) => {
 
   const likeCounter = document.getElementById(`counter${id}`);
   updateLikes(id, likeCounter);
-  const counter = document.querySelector('.pokemon-section');
+  const counter = document.querySelector('.counter');
   const itemCounter = Number(id) - 300;
-  counter.innerText = `POKEMON(${itemCounter})`;
+  counter.innerText = `${itemCounter}`;
 };
 
 const getPokemon = async (id) => {
