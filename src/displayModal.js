@@ -6,6 +6,7 @@ const displayModal = async (id) => {
   const count = await commentCount(id);
   const pokeData = await renderPokemon(id);
   const modal = document.querySelector('.modal');
+  const overlay = document.querySelector('.overlay');
   modal.innerHTML = ` <div class="popup">
     <p id="close" class="close-popup">&times;</p>
     <div class="moves">
@@ -59,6 +60,7 @@ const displayModal = async (id) => {
   closeBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
       modal.classList.remove('active');
+      overlay.classList.remove('active');
     });
   });
 };

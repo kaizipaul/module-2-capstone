@@ -12,7 +12,9 @@ document.addEventListener('click', (e) => {
   const num = Number(e.target.id);
   if (e.target.classList.contains('comments')) {
     const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
     modal.classList.add('active');
+    overlay.classList.add('active');
     displayModal(num);
   }
 });

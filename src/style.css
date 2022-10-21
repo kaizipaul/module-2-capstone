@@ -1,31 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@600;700&family=Roboto+Slab&display=swap');
 
 body {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Archivo', sans-serif;
-  background-color: #818890;
-  background-image: linear-gradient(45deg, #818890 0%, #c2c2f7 100%);
+  background-color: #a6cff8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='259' height='259' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2384add5' fill-opacity='0.16'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.16'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  color: #281a2e;
 }
 
-a:link {
+a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 header {
   position: fixed;
   z-index: 3;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  width: 100vw;
+  background-color: rgba(236, 237, 236, 0.7);
   backdrop-filter: blur(30px);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1rem;
+  color: #000;
 }
 
 .navbar {
@@ -33,7 +36,7 @@ header {
   gap: 4rem;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 2.5rem 0.3rem;
+  padding: 1rem 2.5rem 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
 }
 
@@ -53,7 +56,8 @@ footer {
   z-index: 3;
   width: 100vw;
   padding: 1rem 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
   box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
 }
 
@@ -70,18 +74,50 @@ footer {
   display: flex;
   flex-direction: column;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
-  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+  padding: 0;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
 }
 
 .poke-img {
-  width: 40%;
-  height: 40%;
+  width: 6.5rem;
+  height: 45%;
+  object-fit: contain;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(236, 237, 236, 0.7);
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 5px 5px;
+}
+
+.name-like {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  height: 50%;
+  width: 90%;
 }
 
 .line {
@@ -91,27 +127,48 @@ footer {
 
 .likes-count {
   margin-left: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.fa-heart {
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .far:hover {
-  color: red;
+  color: #fb3362;
 }
 
 .fas {
-  color: red;
+  color: #fb3362;
 }
 
 .poke-name {
-  font-size: 1.35rem;
-  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .comments {
-  background-color: white;
   border: none;
   font-size: 1rem;
-  height: 1rem;
-  width: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  height: 25%;
+  width: 80%;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  border-radius: 5px;
+  background-color: #fb3362;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .modal {
@@ -128,6 +185,25 @@ footer {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  transition: 300ms ease-in-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .popup {
