@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Pokemon Pokedex
-In this project I built a JavaScript project using the PokeApi and the Involvement Api. This project displays
-a pokedex of about 50 rare pokemons. Details of specific pokemon are also displayed in a modal window where comments 
+In this project we built a JavaScript project using the PokeApi and the Involvement Api. This project displays
+a Pokedex of about 50 rare pokemons. Details of specific pokemon are also displayed in a modal window where comments 
 can be added. Users are also allowed to give likes to their favorite pokemon.
 
  ## Learning objectives
@@ -11,8 +11,14 @@ can be added. Users are also allowed to give likes to their favorite pokemon.
 - Learn how to use proper ES6 syntax.
 - Use ES6 modules to write modular JavaScript.
 
+## Website Preview
+![Preview](./src/assets/images/Screenshot%202022-10-21%20at%2010.31.46%20AM.png)
+
 ## Live demo
-Please use this [link](https://jaymelfah.github.io/Leaderboard/dist/)
+Please use this [link](https://kaizipaul.github.io/module-2-capstone/)
+
+## Video Description of Website
+> https://drive.google.com/file/d/1NsNfs_R9YXNKWg6_xu2XcjDu41Qtpbtn/view?usp=sharing
 
 ## Built With
 
@@ -41,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 - If it suits you, on your local computer, create a directory in your preferred location (e.g in the Desktop or Document directory)
 
 ### Install
-- To clone the project on your machine: Type `git clone https://github.com/Jaymelfah/Leaderboard.git`.
+- To clone the project on your machine: Type `git clone https://github.com/kaizipaul/module-2-capstone.git`.
 
 - To install webpack and project dependencies _(a packet manager is required)_:
 `npm install`
@@ -55,11 +61,12 @@ To get a local copy up and running follow these simple example steps.
 ## Author
 
 👤 Jeremiah Melfah
-👤 Paul Kaizirege
-
 - GitHub: [GitHub](https://github.com/Jaymelfah)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeremiah-ekow-melfah-a4402a161/)
 
+👤 Paul Kaizirege
+- GitHub: [GitHub](https://github.com/kaizipaul)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/paul-kaizirege-vedasto-89a1b922a/)
 
 ## 🤝 Contributing
 
@@ -74,4 +81,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
