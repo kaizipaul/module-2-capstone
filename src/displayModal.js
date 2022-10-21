@@ -1,6 +1,10 @@
 import { getComments, commentCount, postComments } from './commentsApi.js';
 import { capitalize, renderPokemon } from './modal.js';
 
+const enableScroll = () => {
+  window.onscroll = '';
+};
+
 const displayModal = async (id) => {
   const comments = await getComments(id);
   const count = await commentCount(id);
@@ -61,6 +65,7 @@ const displayModal = async (id) => {
     btn.addEventListener('click', () => {
       modal.classList.remove('active');
       overlay.classList.remove('active');
+      enableScroll();
     });
   });
 };

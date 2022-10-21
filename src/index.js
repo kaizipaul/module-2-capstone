@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchPokemon();
 });
 
+const disableScroll = () => {
+  const horizontalPos = window.scrollX;
+  const verticalPos = window.scrollY;
+  window.onscroll = () => {
+    window.scroll(horizontalPos, verticalPos);
+  };
+};
+
 document.addEventListener('click', (e) => {
   const num = Number(e.target.id);
   if (e.target.classList.contains('comments')) {
@@ -16,5 +24,6 @@ document.addEventListener('click', (e) => {
     modal.classList.add('active');
     overlay.classList.add('active');
     displayModal(num);
+    disableScroll();
   }
 });
